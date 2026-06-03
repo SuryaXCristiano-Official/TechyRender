@@ -79,28 +79,16 @@ That's it. Your bot runs inside TechyRender, and the web UI + API goes live at `
 
 ---
 
-## ⚙️ Environment Variables
-
-| Variable | Required | Default | What it does |
-|----------|----------|---------|--------------|
-| `BOT_NAME` | ✅ | — | Your bot's display name on the status page |
-| `BOT_DEV` | — | `Unknown` | Your name/credit on the status page |
-| `RENDER_EXTERNAL_URL` | — | auto | Your bot's public URL — set automatically by Render.com |
-| `PORT` | — | `8080` | Port for the web UI |
-| `BOT_FILENAME` | ✅ | `Test.py` | Your bot script filename |
-| `MONGO_URI` | — | — | MongoDB connection string (enables state sync) |
-| `RENDER_SERVICE_NAME` | — | falls back to `BOT_NAME` | Used as the MongoDB document key |
-
-> 💡 `RENDER_EXTERNAL_URL` is set automatically by Render.com — you don't need to do anything.
-
----
-
 ## 🔗 Connecting to the Website
 
 1. Go to **[techyrender.page.gd](https://techyrender.page.gd)** and log in
-2. Add your bot using your **Render API key**, **Service ID**, and **Bot URL**
-3. Select your bot and click **"Link TR ID"**
-4. ✅ Your bot is now linked — control it from the website
+2. Click **"+ ADD BOT"** and enter:
+   - Your **Render API Key** (`rnd_...`)
+   - Your **Render Service ID** (`srv-...`)
+   - Your bot's **public URL**
+3. Select your bot from the list
+4. Click **"Link TR ID"**
+5. ✅ Done — you can now control your bot from the dashboard
 
 Once connected, you can:
 
@@ -115,31 +103,13 @@ Once connected, you can:
 
 ## 🌐 Web UI (Built-in)
 
-When `TechyRender.py` runs, it serves a status page at your bot's URL:
+When `TechyRender.py` runs, it serves a live status page at your bot's URL:
 
 ```
 https://your-bot.onrender.com  →  TechyRender Status Page
 ```
 
-The page shows:
-- System status (optimization, MongoDB, account link, version)
-- Bot info (name, developer)
-- A **"View on Website"** button linking to the TechyRender dashboard
-
----
-
-## 📡 API Endpoints
-
-Your bot automatically gets these endpoints:
-
-| Endpoint | What it's for |
-|----------|---------------|
-| `GET /getstatus` | Returns bot name, version, ping interval, connection status |
-| `GET /connectweb/techyrender?id=XXX` | Links your bot to a TechyRender account |
-| `GET /techyrender/unlink?id=XXX` | Disconnects from the website |
-| `GET /techyrender/update?id=XXX&interval=N` | Changes the heartbeat ping interval |
-
-These are used by the website — you don't need to call them manually.
+The page shows system status, bot info, and a button linking to your TechyRender dashboard.
 
 ---
 
