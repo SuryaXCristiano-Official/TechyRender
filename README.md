@@ -64,9 +64,10 @@ Create a `.env` file in the same folder:
 ```env
 BOT_NAME=MyBot
 BOT_DEV=YourName
-RENDER_EXTERNAL_URL=https://your-bot.onrender.com
 BOT_FILENAME=my_bot.py
 ```
+
+> 💡 `RENDER_EXTERNAL_URL` is detected automatically on Render.com — no need to set it manually.
 
 ### 4. Run
 
@@ -84,13 +85,13 @@ That's it. Your bot runs inside TechyRender, and the web UI + API goes live at `
 |----------|----------|---------|--------------|
 | `BOT_NAME` | ✅ | — | Your bot's display name on the status page |
 | `BOT_DEV` | — | `Unknown` | Your name/credit on the status page |
-| `RENDER_EXTERNAL_URL` | ✅ | — | Your bot's public URL (needed for heartbeat + website link) |
+| `RENDER_EXTERNAL_URL` | — | auto | Your bot's public URL — set automatically by Render.com |
 | `PORT` | — | `8080` | Port for the web UI |
 | `BOT_FILENAME` | ✅ | `Test.py` | Your bot script filename |
 | `MONGO_URI` | — | — | MongoDB connection string (enables state sync) |
 | `RENDER_SERVICE_NAME` | — | falls back to `BOT_NAME` | Used as the MongoDB document key |
 
-> 💡 On Render.com, `RENDER_EXTERNAL_URL` is set automatically. For other hosts, set it manually.
+> 💡 `RENDER_EXTERNAL_URL` is set automatically by Render.com — you don't need to do anything.
 
 ---
 
