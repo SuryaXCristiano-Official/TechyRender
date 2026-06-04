@@ -2,32 +2,26 @@
   <img src="https://iili.io/C2nKZan.jpg" width="80" height="80" style="border-radius:50%;border:2px solid #00d4ff;box-shadow:0 0 30px rgba(0,212,255,.3)">
 </p>
 
-<h1 align="center">⚡ TechyRender.py</h1>
+<h1 align="center">⚡ TechyRender</h1>
 
 <p align="center">
   <b>Plug it into your bot. Control it from the web.</b><br>
-  One Python file that gives your bot a REST API, live status page, and remote management.
+  One Python file that give your render hosted bots a REST API, live status page, and remote management directly from the web. No complex setup, no cron-job/uptime-monitor, manage everything from one place !!!
 </p>
 
-<p align="center">
-  <a href="https://techyrender.page.gd"><img src="https://img.shields.io/badge/Visit-Website-00d4ff?style=for-the-badge"></a>
-  <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat&logo=python">
-  <img src="https://img.shields.io/badge/MongoDB-ready-47A248?style=flat&logo=mongodb">
-</p>
 
 ---
 
-## 👋 What is This?
+## 🌐 Introduction to TechyRender
 
-**TechyRender.py** is a lightweight Python engine you drop into your bot project. Once running, it:
+**TechyRender** is a lightweight Python engine you drop into your bot projects. Once running, it:
 
 - Serves a **live status page** at your bot's URL
 - Exposes a **REST API** that the TechyRender website talks to
 - Keeps your bot **alive** with heartbeat pings
 - Auto-**restarts** your bot if it crashes
-- Lets you **link your bot** to your TechyRender account for remote control
+- Lets you **link your bot** to your TechyRender account and control all render functions 
 
-No frameworks. No complex setup. One file.
 
 ---
 
@@ -35,112 +29,66 @@ No frameworks. No complex setup. One file.
 
 | Feature | What it does |
 |---------|--------------|
-| 🌐 **Live Web UI** | A dark-themed status page at your bot's URL showing name, version, MongoDB status, connection status |
+| 🌐 **Live Web UI** | A dark-themed status page at your bot's URL showing all the necessary infos |
 | 🔌 **REST API** | `/getstatus`, `/connectweb`, `/unlink`, `/update` — called by the website automatically |
-| ❤️ **Heartbeat** | Pings your bot's URL every N seconds to keep Render from spinning down |
+| ❤️ **Heartbeat** | Pings your bot's URL every 60 seconds (default/changeable) and keep Render from spinning down |
 | 🔄 **Auto-Restart** | If your bot script crashes, it restarts automatically in 5 seconds |
 | ☁️ **MongoDB Sync** | Persists your bot's state (interval, connection) across restarts |
-| 🛑 **Remote Kill** | Website can suspend your bot instantly |
+| 🛑 **Full Control** | Fully control all render actions through the website, via Render's Official API |
 | 🔗 **One-Click Link** | Connect to the TechyRender website with a single click |
 
 ---
 
-## 📥 Quick Start
+## 📥 Quick Setup Tutorial
 
-### 1. Install
+### 🔌 Adding TechyRender in your Projects
+1. Download the **[TechyRender.zip](https://github.com/SuryaXCristiano-Official/TechyRender/releases/download/Zip/TechyRender.zip)** and extract it. You will find 3 files there - `TechyRender.py`, `requirements.txt`, `.env` and a Setup Guide.
+2. Place the `TechyRender.py` in your github bot repo folder
+3. Also add `requirements.txt` on the same folder 
+4. Add .env on the repo, or add them later as render secret variables
+5. Repo setup is done ✅ 
 
-```bash
-pip install requests python-dotenv pymongo cryptography
-```
-
-### 2. Place the File
-
-Put `TechyRender.py` in the **same folder** as your bot script.
-
-### 3. Configure
-
-Create a `.env` file in the same folder:
-
-```env
-BOT_NAME=MyBot
-BOT_DEV=YourName
-BOT_FILENAME=my_bot.py
-```
-
-> 💡 `RENDER_EXTERNAL_URL` is detected automatically on Render.com — no need to set it manually.
-
-### 4. Run
-
+### 🧩 Setup Render Environment
+1. Go to render.com , create new web service. 
+2. Select your github repo, select hosting plan 
+3. Keep everything default, but **you must add this as the start command**
 ```bash
 python TechyRender.py
 ```
-
-That's it. Your bot runs inside TechyRender, and the web UI + API goes live at `http://0.0.0.0:8080`.
+4. If your main bot logic is fine, your bot will be live ✅
 
 ---
 
 ## 🔗 Connecting to the Website
 
-1. Go to **[techyrender.page.gd](https://techyrender.page.gd)** and log in
+1. Go to **[TechyRender Website](https://techyrender.page.gd)** and signup/login
 2. Click **"+ ADD BOT"** and enter:
-   - Your **Render API Key** (`rnd_...`)
-   - Your **Render Service ID** (`srv-...`)
-   - Your bot's **public URL**
-3. Select your bot from the list
-4. Click **"Link TR ID"**
-5. ✅ Done — you can now control your bot from the dashboard
-
-Once connected, you can:
-
-- 📊 **View live status** — ping, version, uptime, connection state
-- 🔄 **Restart / Suspend / Resume** your Render service
-- 📦 **Force deploy** with or without cache
-- 🔧 **Edit environment variables** remotely
-- ⏱ **Change ping interval** anytime
-- 👀 **Watch terminal output** in real time
+   - Your **Render API Key** 
+   - Your **Render Service ID** 
+   - Your bot's **Public URL**
+3. The bot will be added successfully 
+4. Select your bot from the list
+5. Click **"Link TR ID"**
+6. ✅ Done — you can now control your bot from the dashboard
+7. You can add as many bots as you want, control them all from one place.
 
 ---
 
-## 🌐 Web UI (Built-in)
+## 📥 Additional Guides
 
-When `TechyRender.py` runs, it serves a live status page at your bot's URL:
+### ⬛ Setting up MondoDB
 
-```
-https://your-bot.onrender.com  →  TechyRender Status Page
-```
+For a detailed guide on **MondoDB** setup please visit **[here](https://techyrender.page.gd/Mongodb)**
 
-The page shows system status, bot info, and a button linking to your TechyRender dashboard.
+### 📝 Api Docs
 
+**[TechyRender API Docs](https://techyrender.page.gd/ApiDocs)**
+**[Render API Docs](https://api-docs.render.com/reference/introduction)**
 ---
 
-## ☁️ MongoDB (Optional)
+### 🔴 Legal Notice ( Important ) 
 
-Set `MONGO_URI` in your `.env` to enable persistent state:
-
-```env
-MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net
-```
-
-Your bot's ping interval and TechyRender ID are saved to MongoDB, so they survive restarts.
-
----
-
-## ❓ FAQ
-
-**Q: Do I need the PHP files?**  
-No. The website is already hosted. You only need `TechyRender.py`.
-
-**Q: My bot crashed — what happens?**  
-TechyRender auto-restarts it after 5 seconds. You'll see a warning in stderr.
-
-**Q: Can I run multiple bots?**  
-Yes. Each bot runs its own `TechyRender.py` and connects to the same website.
-
-**Q: How do I stop my bot remotely?**  
-Use the **Suspend** button on the website. TechyRender detects the suspension and shuts down.
-
-**Q: Does it work without MongoDB?**  
-Yes. State is saved locally to `techyrender_config.json`. MongoDB just adds persistence across servers.
+𝗧𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝗺𝗮𝗱𝗲 𝗳𝗼𝗿 𝗲𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗽𝘂𝗿𝗽𝗼𝘀𝗲𝘀, 𝗯𝘂𝘁 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝘂𝗻𝗲𝘁𝗵𝗶𝗰𝗮𝗹 𝗶𝘀 𝘂𝘀𝗲𝗱 𝗵𝗲𝗿𝗲. 𝗔𝗹𝗹 𝘁𝗵𝗲 𝗔𝗣𝗜 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝗮𝗿𝗲 𝗮𝗹𝗿𝗲𝗱𝘆 𝗶𝗻 𝗥𝗲𝗻𝗱𝗲𝗿'𝘀 𝗔𝗣𝗜 𝗱𝗼𝗰𝘀. 𝗧𝗵𝗲 𝗢𝗻𝗹𝘆 𝗚𝗼𝗮𝗹 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝘁𝗼 𝗵𝗲𝗹𝗽 𝗽𝗲𝗼𝗽𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲 𝘁𝗵𝗲𝗶𝗿 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 𝗲𝗮𝘀𝗶𝗹𝘆 𝗶𝗻 𝗼𝗻𝗲 𝗽𝗹𝗮𝗰𝗲, 𝗮𝗻𝗱 𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝗳𝗼𝗿 𝘁𝗵𝗼𝘀𝗲 𝘄𝗵𝗼 𝗰𝗮𝗻𝘁 𝗮𝗳𝗳𝗼𝗿𝗱 𝗮 𝗽𝗮𝗶𝗱 𝗽𝗹𝗮𝗻 𝗼𝗳 𝗿𝗲𝗻𝗱𝗲𝗿. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗱𝗼𝗻𝘁 𝗺𝗶𝘀𝘂𝘀𝗲, 𝗼𝗿 𝗠𝗶𝘀𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝘁𝗵𝗲 𝗰𝗼𝗻𝗰𝗲𝗽𝘁. 𝗧𝗵𝗮𝗻𝗸𝘀 🙏
 
 ---
 
@@ -150,5 +98,5 @@ Yes. State is saved locally to `techyrender_config.json`. MongoDB just adds pers
 </p>
 
 <p align="center">
-  <sub>MIT License · Free to use, modify, and share</sub>
+  <sub>© 2026 Copyright Reserved @SuryaXCristiano </sub>
 </p>
