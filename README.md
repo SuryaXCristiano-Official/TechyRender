@@ -48,6 +48,7 @@
 4. Add .env on the repo, or add them later as render secret variables
 5. Repo setup is done ✅ 
 
+
 ### 🧩 Setup Render Environment
 1. Go to render.com , create new web service. 
 2. Select your github repo, select hosting plan 
@@ -57,7 +58,6 @@ python TechyRender.py
 ```
 4. If your main bot logic is fine, your bot will be live ✅
 
----
 
 ## 🔗 Connecting to the Website
 
@@ -83,10 +83,26 @@ For a detailed guide on **MondoDB** setup please visit **[here](https://techyren
 ### 📝 Api Docs
 
 **[TechyRender API Docs](https://techyrender.page.gd/ApiDocs)**
+
 **[Render API Docs](https://api-docs.render.com/reference/introduction)**
 ---
 
-### 🔴 Legal Notice ( Important ) 
+
+## ❗ Important Points ( Must Read )
+
+1. You must add the `BOT_FILENAME` as a env variable. If it's not added, TechyRender **can't detect** your main bot file 
+2. To use Mongodb, you must add `MONGO_URI` env variable, and Uncomment `pymongo` in the `requirements.txt`. 
+3. `BOT_NAME` & `BOT_DEV` env variables are optional. But the website needs the BOT_NAME variable to auto detect the bot's name
+4. You can add any other variables such as Bot Token, Admin Id or API keys in the same `.env` file. Same criteria goes for `requirements.txt` also.
+5. Make sure you always have the access of your mail, in order to Login into the website. **It's not recommended to use Temp Mails**
+6. If your bot is linked to a TR id and you lost the access of your TR account, **adding another TR id isn't possible**. You must need to use API endpoint to **unlink the existing TR id first**. 
+7. **Don't ever share** your TR ID, Render API key etc. with anyone. On the other hand, Render URL can be shared.
+
+
+---
+
+
+## 🔴 Legal Notice ( Vital ) 
 
 𝗧𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝗺𝗮𝗱𝗲 𝗳𝗼𝗿 𝗲𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗽𝘂𝗿𝗽𝗼𝘀𝗲𝘀, 𝗯𝘂𝘁 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝘂𝗻𝗲𝘁𝗵𝗶𝗰𝗮𝗹 𝗶𝘀 𝘂𝘀𝗲𝗱 𝗵𝗲𝗿𝗲. 𝗔𝗹𝗹 𝘁𝗵𝗲 𝗔𝗣𝗜 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝗮𝗿𝗲 𝗮𝗹𝗿𝗲𝗱𝘆 𝗶𝗻 𝗥𝗲𝗻𝗱𝗲𝗿'𝘀 𝗔𝗣𝗜 𝗱𝗼𝗰𝘀. 𝗧𝗵𝗲 𝗢𝗻𝗹𝘆 𝗚𝗼𝗮𝗹 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝘁𝗼 𝗵𝗲𝗹𝗽 𝗽𝗲𝗼𝗽𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲 𝘁𝗵𝗲𝗶𝗿 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 𝗲𝗮𝘀𝗶𝗹𝘆 𝗶𝗻 𝗼𝗻𝗲 𝗽𝗹𝗮𝗰𝗲, 𝗮𝗻𝗱 𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝗳𝗼𝗿 𝘁𝗵𝗼𝘀𝗲 𝘄𝗵𝗼 𝗰𝗮𝗻𝘁 𝗮𝗳𝗳𝗼𝗿𝗱 𝗮 𝗽𝗮𝗶𝗱 𝗽𝗹𝗮𝗻 𝗼𝗳 𝗿𝗲𝗻𝗱𝗲𝗿. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗱𝗼𝗻𝘁 𝗺𝗶𝘀𝘂𝘀𝗲, 𝗼𝗿 𝗠𝗶𝘀𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝘁𝗵𝗲 𝗰𝗼𝗻𝗰𝗲𝗽𝘁. 𝗧𝗵𝗮𝗻𝗸𝘀 🙏
 
