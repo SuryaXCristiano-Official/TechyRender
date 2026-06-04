@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://iili.io/C2nKZan.jpg" width="80" height="80" style="border-radius:50%;border:2px solid #00d4ff;box-shadow:0 0 30px rgba(0,212,255,.3)">
+  <img src="https://imghosting.in/host/7i64il" width="80" height="80" style="border-radius:50%;border:2px solid #00d4ff;box-shadow:0 0 30px rgba(0,212,255,.3)">
 </p>
 
 <h1 align="center">⚡ TechyRender</h1>
@@ -74,6 +74,15 @@ python TechyRender.py
 
 ---
 
+
+## ⁉️ Tamper Warning ( Vital )
+
+**The `TechyRender.py` is a encrypted python file. Please do not change filename, remove or add any code in the file, or else the file won't work. Though the project is free and open source, the file is kept encrypted to prevent misuse / use without credits
+
+
+---
+
+
 ## 📥 Additional Guides
 
 ### ⬛ Setting up MondoDB
@@ -92,14 +101,15 @@ For a detailed guide on **MondoDB** setup please visit **[here](https://techyren
 
 ## ❗ Important Points ( Must Read )
 
-1. You must add the `BOT_FILENAME` as a env variable. If it's not added, TechyRender **can't detect** your main bot file 
-2. To use Mongodb, you must add `MONGO_URI` env variable, and Uncomment `pymongo` in the `requirements.txt`. 
-3. `BOT_NAME` & `BOT_DEV` env variables are optional. But the website needs the BOT_NAME variable to auto detect the bot's name
-4. You can add any other variables such as Bot Token, Admin Id or API keys in the same `.env` file. Same criteria goes for `requirements.txt` also.
-5. Make sure you always have the access of your mail, in order to Login into the website. **It's not recommended to use Temp Mails**
-6. If your bot is linked to a TR id and you lost the access of your TR account, **adding another TR id isn't possible**. You must need to use API endpoint to **unlink the existing TR id first**. 
-7. **Don't ever share** your TR ID, Render API key etc. with anyone. On the other hand, Render URL can be shared.
-
+1. You must add the `BOT_FILENAME` as a env variable. If it's not added, TechyRender **can't detect** your main bot file. 
+2. The TechyRender.py is optimized to support all type of telegram bot methods, and supports both `Polling` & `Webhook`.
+3. To use Mongodb, you must add `MONGO_URI` env variable, and Uncomment `pymongo` in the `requirements.txt`. 
+4. `BOT_NAME` & `BOT_DEV` env variables are optional. But the website needs the BOT_NAME variable to auto detect the bot's name
+5. You can add any other variables such as Bot Token, Admin Id or API keys in the same `.env` file. Same criteria goes for `requirements.txt` also.
+6. Make sure you always have the access of your mail, in order to Login into the website. **It's not recommended to use Temp Mails**
+7. If your bot is linked to a TR id and you lost the access of your TR account, **adding another TR id isn't possible**. You must need to use API endpoint to **unlink the existing TR id first**. 
+8. **Don't ever share** your TR ID, Render API key etc. with anyone. On the other hand, Render URL can be shared.
+9. The Project is open source and free, please share and give it a star if you like to 🙏
 
 ---
 
