@@ -1,3 +1,30 @@
+<style>
+.tricon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 8px !important;
+  background: linear-gradient(135deg, rgba(0,212,255,.15), rgba(0,212,255,.05)) !important;
+  border: 1px solid rgba(0,212,255,.3) !important;
+  box-shadow: 0 0 14px rgba(0,212,255,.1), inset 0 0 10px rgba(0,212,255,.03) !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  margin-right: 6px !important;
+  transition: box-shadow .3s, border-color .3s !important;
+}
+h1:hover .tricon, h2:hover .tricon, h3:hover .tricon {
+  border-color: rgba(0,212,255,.6) !important;
+  box-shadow: 0 0 24px rgba(0,212,255,.2), inset 0 0 14px rgba(0,212,255,.06) !important;
+}
+.tbl-icon {
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+</style>
+
 <p align="center">
   <img src="https://imghosting.in/host/7i64il" width="80" height="80" style="border-radius:50%;border:2px solid #00d4ff;box-shadow:0 0 30px rgba(0,212,255,.3)">
 </p>
@@ -12,7 +39,7 @@
 
 ---
 
-## 🌐 Introduction to TechyRender
+## <span class="tricon">🌐</span> Introduction to TechyRender
 
 **TechyRender** is a lightweight Python engine you drop into your bot projects. Once running, it:
 
@@ -25,23 +52,23 @@
 
 ---
 
-## ✨ What You Get
+## <span class="tricon">✨</span> What You Get
 
 | Feature | What it does |
 |---------|--------------|
-| 🌐 **Live Web UI** | A dark-themed status page at your bot's URL showing all the necessary infos |
-| 🔌 **REST API** | `/getstatus`, `/connectweb`, `/unlink`, `/update` — called by the website automatically |
-| ❤️ **Heartbeat** | Pings your bot's URL every 60 seconds (default/changeable) and keep Render from spinning down |
-| 🔄 **Auto-Restart** | If your bot script crashes, it restarts automatically in 5 seconds |
-| ☁️ **MongoDB Sync** | Persists your bot's state (interval, connection) across restarts |
-| 🛑 **Full Control** | Fully control all render actions through the website, via Render's Official API |
-| 🔗 **One-Click Link** | Connect to the TechyRender website with a single click |
+| <span class="tbl-icon">🌐</span> **Live Web UI** | A dark-themed status page at your bot's URL showing all the necessary infos |
+| <span class="tbl-icon">🔌</span> **REST API** | `/getstatus`, `/connectweb`, `/unlink`, `/update` — called by the website automatically |
+| <span class="tbl-icon">❤️</span> **Heartbeat** | Pings your bot's URL every 60 seconds (default/changeable) and keep Render from spinning down |
+| <span class="tbl-icon">🔄</span> **Auto-Restart** | If your bot script crashes, it restarts automatically in 5 seconds |
+| <span class="tbl-icon">☁️</span> **MongoDB Sync** | Persists your bot's state (interval, connection) across restarts |
+| <span class="tbl-icon">🛑</span> **Full Control** | Fully control all render actions through the website, via Render's Official API |
+| <span class="tbl-icon">🔗</span> **One-Click Link** | Connect to the TechyRender website with a single click |
 
 ---
 
-## 📥 Quick Setup Tutorial
+## <span class="tricon">📥</span> Quick Setup Tutorial
 
-### 🔌 Adding TechyRender in your Projects
+### <span class="tricon">🔌</span> Adding TechyRender in your Projects
 1. Download the **[TechyRender.zip](https://github.com/SuryaXCristiano-Official/TechyRender/releases/download/Zip/TechyRender.zip)** and extract it. You will find 3 files there - `TechyRender.py`, `requirements.txt`, `.env` and a Setup Guide.
 2. Place the `TechyRender.py` in your github bot repo folder
 3. Also add `requirements.txt` on the same folder 
@@ -49,7 +76,7 @@
 5. Repo setup is done ✅ 
 
 
-### 🧩 Setup Render Environment
+### <span class="tricon">🧩</span> Setup Render Environment
 1. Go to render.com , create new web service. 
 2. Select your github repo, select hosting plan 
 3. Keep everything default, but **you must add this as the start command**
@@ -59,7 +86,7 @@ python TechyRender.py
 4. If your main bot logic is fine, your bot will be live ✅
 
 
-## 🔗 Connecting to the Website
+## <span class="tricon">🔗</span> Connecting to the Website
 
 1. Go to **[TechyRender Website](https://techyrender.page.gd)** and signup/login
 2. Click **"+ ADD BOT"** and enter:
@@ -75,7 +102,7 @@ python TechyRender.py
 ---
 
 
-## ⁉️ Tamper Warning ( Vital )
+## <span class="tricon">⁉️</span> Tamper Warning ( Vital )
 
 **The `TechyRender.py` is a encrypted python file. Please do not change filename, remove or add any code in the file, or else the file won't work. Though the project is free and open source, the file is kept encrypted to prevent misuse / use without credits
 
@@ -83,13 +110,13 @@ python TechyRender.py
 ---
 
 
-## 📥 Additional Guides
+## <span class="tricon">📥</span> Additional Guides
 
-### ⬛ Setting up MondoDB
+### <span class="tricon">⬛</span> Setting up MondoDB
 
 For a detailed guide on **MondoDB** setup please visit **[here](https://techyrender.page.gd/Mongodb)**
 
-### 📝 Api Docs
+### <span class="tricon">📝</span> Api Docs
 
 **[TechyRender API Docs](https://techyrender.page.gd/ApiDocs)**
 
@@ -99,7 +126,7 @@ For a detailed guide on **MondoDB** setup please visit **[here](https://techyren
 ---
 
 
-## ❗ Important Points ( Must Read )
+## <span class="tricon">❗</span> Important Points ( Must Read )
 
 1. You must add the `BOT_FILENAME` as a env variable. If it's not added, TechyRender **can't detect** your main bot file. 
 2. The TechyRender.py is optimized to support all type of telegram bot methods, and supports both `Polling` & `Webhook`.
@@ -114,9 +141,9 @@ For a detailed guide on **MondoDB** setup please visit **[here](https://techyren
 ---
 
 
-## 🔴 Legal Notice ( Vital ) 
+## <span class="tricon">🔴</span> Legal Notice ( Vital ) 
 
-𝗧𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝗺𝗮𝗱𝗲 𝗳𝗼𝗿 𝗲𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗽𝘂𝗿𝗽𝗼𝘀𝗲𝘀, 𝗯𝘂𝘁 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝘂𝗻𝗲𝘁𝗵𝗶𝗰𝗮𝗹 𝗶𝘀 𝘂𝘀𝗲𝗱 𝗵𝗲𝗿𝗲. 𝗔𝗹𝗹 𝘁𝗵𝗲 𝗔𝗣𝗜 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝗮𝗿𝗲 𝗮𝗹𝗿𝗲𝗱𝘆 𝗶𝗻 𝗥𝗲𝗻𝗱𝗲𝗿'𝘀 𝗔𝗣𝗜 𝗱𝗼𝗰𝘀. 𝗧𝗵𝗲 𝗢𝗻𝗹𝘆 𝗚𝗼𝗮𝗹 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝘁𝗼 𝗵𝗲𝗹𝗽 𝗽𝗲𝗼𝗽𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲 𝘁𝗵𝗲𝗶𝗿 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 𝗲𝗮𝘀𝗶𝗹𝘆 𝗶𝗻 𝗼𝗻𝗲 𝗽𝗹𝗮𝗰𝗲, 𝗮𝗻𝗱 𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝗳𝗼𝗿 𝘁𝗵𝗼𝘀𝗲 𝘄𝗵𝗼 𝗰𝗮𝗻𝘁 𝗮𝗳𝗳𝗼𝗿𝗱 𝗮 𝗽𝗮𝗶𝗱 𝗽𝗹𝗮𝗻 𝗼𝗳 𝗿𝗲𝗻𝗱𝗲𝗿. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗱𝗼𝗻𝘁 𝗺𝗶𝘀𝘂𝘀𝗲, 𝗼𝗿 𝗠𝗶𝘀𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝘁𝗵𝗲 𝗰𝗼𝗻𝗰𝗲𝗽𝘁. 𝗧𝗵𝗮𝗻𝗸𝘀 🙏
+𝗧𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝗺𝗮𝗱𝗲 𝗳𝗼𝗿 𝗲𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗽𝘂𝗿𝗽𝗼𝘀𝗲𝘀, 𝗯𝘂𝘁 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝘂𝗻𝗲𝘁𝗵𝗶𝗰𝗮𝗹 𝗶𝘀 𝘂𝘀𝗲𝗱 𝗵𝗲𝗿𝗲. 𝗔𝗹𝗹 𝘁𝗵𝗲 𝗔𝗣𝗜 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝗮𝗿𝗲 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗶𝗻 𝗥𝗲𝗻𝗱𝗲𝗿'𝘀 𝗔𝗣𝗜 𝗱𝗼𝗰𝘀. 𝗧𝗵𝗲 𝗢𝗻𝗹𝘆 𝗚𝗼𝗮𝗹 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝘁𝗼 𝗵𝗲𝗹𝗽 𝗽𝗲𝗼𝗽𝗹𝗲 𝗺𝗮𝗻𝗮𝗴𝗲 𝘁𝗵𝗲𝗶𝗿 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 𝗲𝗮𝘀𝗶𝗹𝘆 𝗶𝗻 𝗼𝗻𝗲 𝗽𝗹𝗮𝗰𝗲, 𝗮𝗻𝗱 𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝗳𝗼𝗿 𝝉𝗵𝗼𝘀𝗲 𝘄𝗵𝗼 𝗰𝗮𝗻𝘁 𝗮𝗳𝗳𝗼𝗿𝗱 𝗮 𝗽𝗮𝗶𝗱 𝗽𝗹𝗮𝗻 𝗼𝗳 𝗿𝗲𝗻𝗱𝗲𝗿. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗱𝗼𝗻𝘁 𝗺𝗶𝘀𝘂𝘀𝗲, 𝗼𝗿 𝗠𝗶𝘀𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝘁𝗵𝗲 𝗰𝗼𝗻𝗰𝗲𝗽𝘁. 𝗧𝗵𝗮𝗻𝗸𝘀 🙏
 
 ---
 
