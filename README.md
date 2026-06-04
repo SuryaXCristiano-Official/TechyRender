@@ -1,30 +1,3 @@
-<style>
-.tricon {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 28px !important;
-  height: 28px !important;
-  border-radius: 8px !important;
-  background: linear-gradient(135deg, rgba(0,212,255,.15), rgba(0,212,255,.05)) !important;
-  border: 1px solid rgba(0,212,255,.3) !important;
-  box-shadow: 0 0 14px rgba(0,212,255,.1), inset 0 0 10px rgba(0,212,255,.03) !important;
-  font-size: 13px !important;
-  line-height: 1 !important;
-  vertical-align: middle !important;
-  margin-right: 6px !important;
-  transition: box-shadow .3s, border-color .3s !important;
-}
-h1:hover .tricon, h2:hover .tricon, h3:hover .tricon {
-  border-color: rgba(0,212,255,.6) !important;
-  box-shadow: 0 0 24px rgba(0,212,255,.2), inset 0 0 14px rgba(0,212,255,.06) !important;
-}
-.tbl-icon {
-  font-size: 14px !important;
-  line-height: 1 !important;
-}
-</style>
-
 <p align="center">
   <img src="https://imghosting.in/host/7i64il" width="80" height="80" style="border-radius:50%;border:2px solid #00d4ff;box-shadow:0 0 30px rgba(0,212,255,.3)">
 </p>
