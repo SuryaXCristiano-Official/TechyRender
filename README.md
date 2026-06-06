@@ -122,7 +122,7 @@ For a detailed guide on **MondoDB** setup please visit **[here](https://techyren
 
 <p align="center">
   <sub>Built with ❤️ by</sub><br>
-  <strong>@SuryaXCristiano</strong>
+  <strong><a href="https://t.me/SuryaXCristiano" target="_blank">@SuryaXCristiano</a></strong>
 </p>
 
 <p align="center">
