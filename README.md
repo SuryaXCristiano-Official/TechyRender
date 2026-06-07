@@ -77,7 +77,7 @@ python TechyRender.py
 
 ## <span class="tricon">⁉️</span> Tamper Warning ( Vital )
 
-**The `TechyRender.py` is a encrypted python file. Please do not change filename, remove or add any code in the file, or else the file won't work. Though the project is free and open source, the file is kept encrypted to prevent misuse / use without credits
+**The `TechyRender.py` is a encrypted python file. Please do not change filename, remove or add any code in the file, or else the file won't work. Though the project is free and open source, the file is kept encrypted to prevent misuse / use without credits**
 
 
 ---
